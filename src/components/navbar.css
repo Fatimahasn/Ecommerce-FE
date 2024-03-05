@@ -1,0 +1,55 @@
+.nav-bar{
+    border-bottom: 2px solid rgb(229, 229, 229);;
+}  
+.nav1{
+    margin-left: 16%;
+}
+.titlebar{
+    display:flex;
+    margin: 1% 0;
+}
+.title-icon {
+    display:flex;
+    margin:auto 3%;
+}
+.cartsize {
+    font-size:30px;
+    margin: auto 5px;
+}
+.search-div {
+    width: 97%;
+}
+.search-products {
+    position: relative;
+}
+.search-input {
+    border-radius: 5px;
+}
+.search-icon{
+    position: absolute;
+    right: 5px;
+    padding:8px;
+    cursor: pointer;
+}
+.btnstyle {
+    border-color: rgb(182, 181, 181);
+}
+.locationbutton{
+    margin:auto 1%;
+    width:5%;
+}
+.icon-styling {
+    padding-right: 5px;
+}
+.detail-icons {
+    display:flex;
+    float:left;
+}
+.detail-icons i {
+    margin: auto 5px;
+    font-size: 25px;
+}
+
+.namebar li {
+    padding-right: 10px;
+}
