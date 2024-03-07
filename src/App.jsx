@@ -20,7 +20,7 @@ function App() {
       <Navbar />
       <div style={{height: "200%"}}>
         <MainApp />
-        {/* <FeaturedCategories /> */}
+        <FeaturedCategories />
       </div>
     </div>    
   )

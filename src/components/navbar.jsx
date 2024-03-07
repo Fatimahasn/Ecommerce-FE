@@ -16,7 +16,7 @@ function Navbar (){
     return (
     <div className="nav-bar">
         <div className= "row nav1">
-          <div className="col-1 titlebar">
+          <div className="col-2 titlebar">
             <div className="title-icon">
               <i className="fa fa-shopping-cart cartsize"></i>
               <h4>FreshCart</h4>

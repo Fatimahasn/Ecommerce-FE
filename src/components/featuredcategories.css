@@ -1,9 +1,29 @@
-.main{
+.main {
     width:70%;
-    margin-left: 300px;
+    margin-left: 250px;
     padding-top: 10px;
 }
-.cardsdisplay {
+.slider-container {
     height: 50%;
     display: flex;
+}
+.slider {
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    height:20% ;
+}
+.card {
+    margin-right: 20px;
+    margin-bottom:20px
+}
+.card-img-top{
+    height:200px;
+}
+.card-body {
+    background-color: rgb(216, 220, 223);
+}
+.card:hover {
+    border-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

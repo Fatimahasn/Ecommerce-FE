@@ -11,6 +11,8 @@ const categoryReducer = (state = initialState, action) => {
         ...state,
         categories: action.payload.featuredCategories,
       };
+    default:
+      return state;
   }
 };
 export default categoryReducer;
