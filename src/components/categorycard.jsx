@@ -1,6 +1,7 @@
 const CategoryCard = (props) => {
+  console.log("props: ",props)
   return (
-    <div className="card">
+    <div className="card" >
       <div style={{ minheight: "200px"}}>
         <img className="card-img-top" src={props.category.imgpath}alt="Card image cap"/>
       </div>
