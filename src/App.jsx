@@ -27,7 +27,7 @@ function App() {
             <Route path='/products' element={<Product/>} />
           </Routes>
         </div>
-        <div style={{width:"16%"}}></div> 
+      
       </div>
     </div>
   )

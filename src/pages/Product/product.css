@@ -16,8 +16,11 @@
 }
 .categories-dropdown {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+}
+.category-sidebar{
     border-bottom: 1px solid rgb(212, 202, 202);
+    cursor: pointer;
 }
 .icon-position {
     margin-top: 15px;
@@ -29,6 +32,14 @@
     padding: 0;
     
 }
+.categories-dropdown:hover{
+    color:green;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
 .product-container{
     width:80%;
     margin-left:50px;
@@ -47,3 +58,8 @@
     padding-top:10px;
     padding-bottom: 10px;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
