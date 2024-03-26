@@ -4,15 +4,16 @@ const initialState = {
   cart: 0,
   categories: [],
 };
-const categoryReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "addData":
+      console.log(action.payload);
       return {
         ...state,
-        categories: action.payload.featuredCategories,
+        categories: action.payload,
       };
     default:
       return state;
   }
 };
-export default categoryReducer;
+export default reducer;

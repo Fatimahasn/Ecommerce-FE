@@ -10,7 +10,7 @@ import Product from './pages/Product/product';
 function App() {
   const dispatch=useDispatch()
   const getData =async()=>{
-    const result = await axios.get("http://localhost:3000/home/getData")
+    const result = await axios.get("http://localhost:3000/api/getData")
     dispatch({type:"addData", payload:result.data})
   }
   useEffect(()=>{

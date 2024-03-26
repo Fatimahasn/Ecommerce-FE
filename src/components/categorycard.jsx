@@ -1,5 +1,4 @@
 const CategoryCard = (props) => {
-  console.log("props: ",props)
   return (
     <div className="card" >
       <div style={{ minheight: "200px"}}>

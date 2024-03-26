@@ -7,8 +7,10 @@ import { useState } from "react";
 const Product=()=>{
     const location = useLocation();
     const categoryIndex = parseInt(location.state);
-    const categories = useSelector(state =>state.categoryReducer.categories);
+    const categories = useSelector(state =>state.reducer.categories);
+    console.log("Categories: ",categories)
     const [products,setProducts]=useState(categories[categoryIndex].products);
+    console.log("products: ",products)
     const [selectedCategory, setSelectedCategory]= useState(categories[categoryIndex].name)
     // const flagarr =  new Array(categories.length).fill(false);
     const onCategoryClick=(index)=>{
@@ -48,7 +50,12 @@ const Product=()=>{
                 <p>{products.length} products found</p>
                 <div className="wrapper">
                         {products.map((product, index) => 
-                                <ItemCard product={product} category={selectedCategory} index={index}/>
+                        
+                            product.items.map((element,ind)=>
+                                <ItemCard product={element} category={categories[categoryIndex].name} index={index}/>
+                            )
+                        
+                               
             
                         )}
                     </div>

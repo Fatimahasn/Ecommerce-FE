@@ -7,7 +7,7 @@ import MainApp from "../../components/mainapp"
 import {useSelector} from "react-redux";
 const Home =()=>{
     const navigate=useNavigate();
-    const categories = useSelector(state =>state.categoryReducer.categories);
+    const categories = useSelector(state =>state.reducer.categories);
     const onCategoryClick =(index)=>{
         console.log(index);
         navigate("/products",{state: index.toString()});
